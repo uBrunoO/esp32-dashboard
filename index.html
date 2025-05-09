@@ -7,25 +7,23 @@
     <title>Dashboard ESP32</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/paho-mqtt/mqttws31.min.js"></script>
+    <script defer src="script.js"></script>
 
 </head>
 
 <body>
     <div id="login">
-        <h2>Login</h2>
-        <input id="user" placeholder="Usuário"><br>
-        <input id="pass" type="password" placeholder="Senha"><br>
-        <button id="btnLogin">Entrar</button>
-    </div>
+    <h2>Login</h2>
+    <input id="user" placeholder="Usuário" />
+    <input id="pass" type="password" />
+    <button id="btnLogin">Entrar</button>
+  </div>
 
-    <div id="panel" class="hidden">
-        <header>
-            <h1>Controle de Ambientes</h1>
-        </header>
-        <div id="rooms" class="rooms"></div>
-    </div>
+  <div id="panel" class="hidden">
+    <h2>Painel de Controle</h2>
+    <div id="rooms"></div>
+  </div>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
