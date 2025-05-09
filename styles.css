@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografia e cores */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f4f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Login */
+#login {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+}
+
+#login input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#login button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #007AFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login button:hover {
+    background: #005FCC;
+}
+
+/* Painel */
+.hidden {
+    display: none;
+}
+
+#panel {
+    width: 100%;
+    max-width: 1000px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Grid de botões */
+.rooms {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.room-btn {
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    background: #007AFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.room-btn.active {
+    background: #34C759;
+}
+
+.room-btn:active {
+    transform: scale(0.97);
+}
+
+/* Responsividade extra */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .room-btn {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
